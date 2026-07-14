@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Sample handwritten derivative</title>
+  <desc id="desc">Blue ruled paper with a handwritten derivative that contains a visible plus two term.</desc>
+  <defs>
+    <pattern id="minorGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#dbe3f2" stroke-width="1" />
+    </pattern>
+    <filter id="paperShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1f2c5e" flood-opacity=".12" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#dfe6f1" />
+  <g filter="url(#paperShadow)">
+    <rect x="72" y="38" width="656" height="524" rx="8" fill="#fffefe" />
+    <rect x="72" y="38" width="656" height="524" rx="8" fill="url(#minorGrid)" opacity=".82" />
+  </g>
+
+  <line x1="148" y1="38" x2="148" y2="562" stroke="#ffb9aa" stroke-width="3" opacity=".8" />
+
+  <g fill="#26335e" font-family="Comic Sans MS, Bradley Hand, cursive" font-style="italic">
+    <text x="184" y="112" font-size="30" transform="rotate(-1 184 112)">Optimization — scratch work</text>
+    <text x="184" y="197" font-size="48" transform="rotate(.6 184 197)">f(x) = x² + 3x</text>
+    <text x="184" y="286" font-size="50" transform="rotate(-.8 184 286)">f′(x) = 2x + 2</text>
+    <text x="184" y="375" font-size="48" transform="rotate(.4 184 375)">0 = 2x + 2</text>
+    <text x="184" y="464" font-size="50" transform="rotate(-.5 184 464)">x = −1</text>
+    <text x="560" y="522" font-size="25" fill="#d54f35" transform="rotate(-6 560 522)">check sign?</text>
+  </g>
+
+  <path d="M550 500c37-14 66-11 101 1" fill="none" stroke="#d54f35" stroke-linecap="round" stroke-width="4" />
+  <path d="M548 506c31 8 71 8 111-1" fill="none" stroke="#d54f35" stroke-linecap="round" stroke-width="3" opacity=".75" />
+</svg>

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# Claude Code session state (local only, not project content)
+.claude/
+
+# Leftover Playwright MCP test snapshots (dashboard verification scratch output)
+.playwright-mcp/
+tmp/
+
+# Generated training data and evaluation outputs. Public source fixtures live
+# under data/public_samples/; private coursework is never tracked.
+data/training/

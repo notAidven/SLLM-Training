@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "description": "Synthetic public fixtures for handwritten math to LaTeX evaluation.",
+    "data_policy": "No real student work or academic records. See data/README.md.",
+    "status": "PUBLIC_SYNTHETIC"
+  },
+  "entries": [
+    {
+      "id": "synthetic_clean_derivative",
+      "course": "synthetic",
+      "category": "clean",
+      "pdf_path": "data/public_samples/synthetic-clean-derivative.pdf",
+      "exclude_pages": [],
+      "verification": "Generated public fixture with a self-consistent derivative.",
+      "internally_consistent": true,
+      "known_errors": []
+    },
+    {
+      "id": "synthetic_preserved_error",
+      "course": "synthetic",
+      "category": "flawed",
+      "pdf_path": "data/public_samples/synthetic-preserved-error.pdf",
+      "exclude_pages": [],
+      "verification": "Generated public fixture containing one intentional derivative error.",
+      "internally_consistent": null,
+      "known_errors": [
+        {
+          "problem": "derivative line",
+          "page_label": "page 1",
+          "deduction": "synthetic marker",
+          "rubric_reason": "Intentional derivative error",
+          "description": "The source visibly writes f'(x) = 2x + 2 for f(x) = x^2 + 3x. A faithful transcription must preserve the +2 rather than silently changing it to +3."
+        }
+      ]
+    }
+  ]
+}
